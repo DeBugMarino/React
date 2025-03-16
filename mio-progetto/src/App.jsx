@@ -1,12 +1,10 @@
 import "./App.css";
-import Counter from "./counter";
-import CounterDisplay from "./CounterDisplay";
+import Bubblespeech from "./Bubblespeech";
 
 function App() {
   return (
     <>
-      <CounterDisplay counter={Counter} />
-      <Counter />
+      <Bubblespeech />
     </>
   );
 }
