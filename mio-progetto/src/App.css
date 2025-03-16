@@ -58,11 +58,13 @@
 }
 
 .messaggio-ricevuto {
+  display: flex;
   background-color: #e1e1e1;
   justify-content: flex-start;
 }
 
 .messaggio-inviato {
+  display: flex;
   background-color: #007bff;
   color: white;
   justify-content: flex-end;
