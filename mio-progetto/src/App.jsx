@@ -1,12 +1,10 @@
 import "./App.css";
-import Counter from "./counter";
-import CounterDisplay from "./CounterDisplay";
+import UncontrolledLogin from "./UncontrolledLogin";
 
 function App() {
   return (
     <>
-      <CounterDisplay counter={Counter} />
-      <Counter />
+      <UncontrolledLogin />
     </>
   );
 }
