@@ -1,12 +1,11 @@
 import "./App.css";
-import Counter from "./counter";
-import CounterDisplay from "./CounterDisplay";
-
+import Welcome from "./Welcome";
+import Login from "./Login";
 function App() {
   return (
     <>
-      <CounterDisplay counter={Counter} />
-      <Counter />
+      <Welcome name="Mariè" />
+      <Login />
     </>
   );
 }
