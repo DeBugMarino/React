@@ -1,12 +1,17 @@
 import "./App.css";
-import Counter from "./counter";
-import CounterDisplay from "./CounterDisplay";
+import Colors from "./Colors";
 
 function App() {
+  const colorArray = [
+    { id: 1, name: "Red" },
+    { id: 2, name: "White" },
+    { id: 3, name: "Black" },
+    { id: 4, name: "Blue" },
+    { id: 5, name: "Yellow" },
+  ];
   return (
     <>
-      <CounterDisplay counter={Counter} />
-      <Counter />
+      <Colors colors={colorArray} />
     </>
   );
 }
