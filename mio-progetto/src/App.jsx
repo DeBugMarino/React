@@ -1,11 +1,15 @@
 import "./App.css";
+import Counter from "./counter";
+import Login from "./login";
 
-import TodoList from "./TodoList";
+import Welcome from "./welcome";
 
 function App() {
   return (
     <>
-      <TodoList></TodoList>
+      <Welcome />
+      <Counter />
+      <Login />
     </>
   );
 }
