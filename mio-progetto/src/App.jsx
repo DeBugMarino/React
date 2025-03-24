@@ -1,11 +1,10 @@
 import "./App.css";
-
-import TodoList from "./TodoList";
+import Container from "./Container";
 
 function App() {
   return (
     <>
-      <TodoList></TodoList>
+      <Container></Container>
     </>
   );
 }
