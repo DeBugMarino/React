@@ -1,13 +1,7 @@
-import { createContext } from "react";
-
-export const LanguageContext = createContext("en");
+import { useContext } from "react";
+import { LanguageContext } from "./languageContext";
 
 export default function Hello() {
-  return (
-    <div>
-      <LanguageContext.Provider value="en">
-        <h2>Hello, World!</h2>
-      </LanguageContext>
-    </div>
-  );
+  const language = useContext(LanguageContext);
+  return <h2>{language === "en" ? "Hello, World!" : "ciao, Mondo"}</h2>;
 }

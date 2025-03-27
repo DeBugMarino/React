@@ -9,12 +9,13 @@ function App() {
     setLanguage(language);
   }
   return (
-    <>
+    <div>
+<LanguageContext.Provider value={language} />
       <button onClick={() => handleSetLanguage("it")}>IT</button>
-      <button onClick={() => handleSetLanguage("en")}>IT</button>
+      <button onClick={() => handleSetLanguage("en")}>EN</button>
       <Welcome />
-      <LanguageContext.Provider value="en" />
-    </>
+      </LanguageContext>
+    </div>
   );
 }
 
