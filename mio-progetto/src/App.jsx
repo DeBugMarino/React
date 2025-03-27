@@ -1,12 +1,12 @@
 import "./App.css";
 
-import TodoList from "./TodoList";
+import GithubUsers from "./GithubUsers";
 
 function App() {
   return (
-    <>
-      <TodoList></TodoList>
-    </>
+    <div>
+      <GithubUsers />
+    </div>
   );
 }
 
