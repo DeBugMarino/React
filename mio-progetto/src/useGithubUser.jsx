@@ -1,7 +1,7 @@
 import { useGithub } from "react";
 
 export default function GithubUsers() {
-  const [username, users] = useGithub();
+  const [username, users, handleSubmit, setUsername] = useGithub();
 
   return (
     <>
