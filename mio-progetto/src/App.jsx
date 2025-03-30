@@ -1,11 +1,11 @@
 import "./App.css";
-
-import TodoList from "./TodoList";
+import Counter from "./counter";
 
 function App() {
   return (
     <>
-      <TodoList></TodoList>
+      <h1>Counter App</h1>
+      <Counter initialValue={0} incrementAmount={2} />
     </>
   );
 }
