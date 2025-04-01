@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCounter } from "react";
 
 function useCounter(initialValue = 0) {
   const [
