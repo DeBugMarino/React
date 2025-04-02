@@ -1,11 +1,27 @@
 import "./App.css";
-
-import TodoList from "./TodoList";
+import { Routes, Route, Link } from "react-router-dom";
+import Welcome from "./Welcome";
+import NotFound from "./NotFound";
 
 function App() {
   return (
     <>
-      <TodoList></TodoList>
+      <ul>
+        <li>
+          <Link to="Welcome">Yo</Link>
+        </li>
+        <li>
+          <Link to="/"></Link>
+        </li>
+        <li>
+          <Link to="/"></Link>
+        </li>
+      </ul>
+      <Routes>
+        <Route path="/" element={<Welcome name={"Franco"}></Welcome>} />
+        <Route path="/" element={<NotFound />} />
+        <Route path="/" element={<ShowGithubUser />} />
+      </Routes>
     </>
   );
 }
