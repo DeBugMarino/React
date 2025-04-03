@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    alert("hai effettuato il logout");
+    navigate("/");
+  }
   return (
     <div>
       <h1>Benvenuto nella tua Dashboard </h1>
@@ -12,6 +18,8 @@ export default function Dashboard() {
           <Link to="Settings">Vai alle Impostazioni</Link>
         </li>
       </ul>
+      <Outlet />
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 }
