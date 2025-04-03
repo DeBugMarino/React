@@ -1,12 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-
-import TodoList from "./TodoList";
-
+import Dashboard from "Dashboard";
 function App() {
   return (
-    <>
-      <TodoList></TodoList>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/Dashboard" element={<Dashboard></Dashboard>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
