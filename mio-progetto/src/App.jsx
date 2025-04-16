@@ -1,11 +1,9 @@
 import "./App.css";
-
-import TodoList from "./TodoList";
-
+import Form from "./TaskForm";
 function App() {
   return (
     <>
-      <TodoList></TodoList>
+      <Form />
     </>
   );
 }
